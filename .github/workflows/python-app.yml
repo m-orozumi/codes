@@ -50,8 +50,8 @@ jobs:
     - name: Run Python script
       run: pytest scrape_code.py
       
-    - name: Add changes to git
-      run: git add results.csv
+    #- name: Add changes to git
+      #run: git add results.csv
 
     - name: Set Git user
       run: | 
@@ -60,7 +60,7 @@ jobs:
 
     - name: Commit changes
       run: |
-        #git add results.csv
+        git add results.csv
         git commit -m "Added results.csv"
     
 
