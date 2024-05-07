@@ -65,7 +65,6 @@ df = pd.DataFrame(data_result)
 # to_csv()を使って、データフレームをCSV出力する
 df.to_csv("results.csv",index=None,encoding="utf-8-sig")
 
-# In[ ]:
 
 
 
