@@ -15,6 +15,10 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
+def test_scraping_function():
+    # テストの実装
+    assert True
+
 
 ## スクレイピング ##
 # 対象サイトのURLを格納する
