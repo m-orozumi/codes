@@ -43,7 +43,7 @@ jobs:
         #pytest
 
     - name: Run Python script
-      run: python scrape_code.ipynb
+      run: python scrape_code.py
       
     - name: Add changes to git
       run: git add result.csv
