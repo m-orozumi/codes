@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
+## テスト関数
 def test_scraping_function():
     # テストの実装
     assert True
