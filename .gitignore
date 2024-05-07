@@ -1,0 +1,12 @@
+# Pythonのキャッシュファイルや一時ファイルなどを除外
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+
+# macOSのFinderのメタデータファイルを除外
+.DS_Store
+
+# Windowsのエクスプローラーのメタデータファイルを除外
+Thumbs.db
