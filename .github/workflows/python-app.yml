@@ -51,7 +51,7 @@ jobs:
       run: python scrape_code.py
       
     - name: Add changes to git
-      run: git add result.csv
+      run: git add results.csv
 
     - name: Set Git user
       run: | 
