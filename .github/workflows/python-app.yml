@@ -59,8 +59,9 @@ jobs:
         git config --global user.name "GitHub Actions"
 
     - name: Add changes & Commit to git
-      run: |
-        git add results.csv
+      #run: |
+        #git add results.csv
+      run:
         git commit -m "Added results.csv"
     
 
