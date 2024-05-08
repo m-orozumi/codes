@@ -20,6 +20,7 @@ def test_scraping_function():
     # テストの実装
     assert True
 
+
 ## スクレイピング ##
 # 対象サイトのURLを格納する
 #url = "https://zdh.stagingbridge.net/"
