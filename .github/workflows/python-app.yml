@@ -48,7 +48,7 @@ jobs:
         #pytest
 
     - name: Run Pytest
-      run: pytest
+      run: python -m pytest
       
     #- name: Add changes to git
       #run: git add results.csv
