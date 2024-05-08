@@ -33,7 +33,7 @@ def test_scraping_function():
     # sleep(1)
 
     # 取得結果を解析してsoupに格納
-        #BeautifulSoup(解析対象のHTML/XML, 利用するパーサー)
+    # BeautifulSoup(解析対象のHTML/XML, 利用するパーサー)
     soup = BeautifulSoup(req.content, "html.parser")
 
     # 本文が入っている「a」タグの「txt-link txt-nomal」*クラスを抽出
