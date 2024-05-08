@@ -19,7 +19,7 @@ import pandas as pd
 
 ## スクレイピング ##
 # 対象サイトのURLを格納する
-def retrieve(content):
+def retrieve(url):
     #url = "https://zdh.stagingbridge.net/"
     url = "https://zdh.stagingbridge.net/?s=AWS"
 
@@ -57,6 +57,9 @@ def retrieve(content):
 
         # 取得したデータセットをリストに格納する
         data_result.append(data_set)
+        
+# スクレイピング結果を返す
+return data_result
 
 
 ## データを保存 ##
