@@ -70,4 +70,4 @@ def test_scraping_function():
     df.to_csv("results.csv",index=None,encoding="utf-8-sig")
 
     # 保存されたCSVファイルが存在することを検証
-    assert os.path.exists("results.csv")
+    assert exists("results.csv")
