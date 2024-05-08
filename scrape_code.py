@@ -18,7 +18,7 @@ import pandas as pd
 ## pytest実行関数
 def test_scraping_function():
     # テストの実装
-    assert True
+    # assert True
 
     ## スクレイピング ##
     # 対象サイトのURLを格納する
@@ -68,3 +68,6 @@ def test_scraping_function():
 
     # to_csv()を使って、データフレームをCSV出力する
     df.to_csv("results.csv",index=None,encoding="utf-8-sig")
+
+    # 保存されたCSVファイルが存在することを検証
+    assert os.path.exists("results.csv")
