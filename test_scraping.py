@@ -3,9 +3,9 @@ from scrape_code import retrieve
 
 def test_scraping_function():
     # テストの実装
-    html = "https://zdh.stagingbridge.net/"
+    url = "https://zdh.stagingbridge.net/"
 
-    result = retrieve(html)
+    result = retrieve(url)
 
     assert result == {
         'title': ["xxx"],
