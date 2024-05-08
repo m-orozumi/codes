@@ -20,10 +20,11 @@ def test_scraping_function():
     # テストの実装
     assert True
 
+
 ## スクレイピング ##
 # 対象サイトのURLを格納する
 #url = "https://zdh.stagingbridge.net/"
-url = "https://zdh.stagingbridge.net/?s=AWS"
+url = "https://zdh.stagingbridge.net/?s=ZEAL"
 
 # requestsを使用してhtmlを取得　→変数reqに格納
 #req = requests.get(url, params={'q': 'AWS'})
