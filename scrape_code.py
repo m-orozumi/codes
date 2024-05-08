@@ -67,7 +67,5 @@ def test_scraping_function():
     df = pd.DataFrame(data_result)
 
     # to_csv()を使って、データフレームをCSV出力する
-    df.to_csv("results.csv",index=None,encoding="utf-8-sig")
+    assert df.to_csv("results.csv",index=None,encoding="utf-8-sig")
 
-    # 保存されたCSVファイルが存在することを検証
-    assert exists("results.csv")
