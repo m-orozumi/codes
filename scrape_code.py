@@ -21,7 +21,7 @@ import pandas as pd
 # 対象サイトのURLを格納する
 def retrieve(url):
     #url = "https://zdh.stagingbridge.net/"
-    #url = "https://zdh.stagingbridge.net/?s=AWS"
+    url = "https://zdh.stagingbridge.net/?s=AWS"
 
     # requestsを使用してhtmlを取得　→変数reqに格納
     #req = requests.get(url, params={'q': 'AWS'})
@@ -58,12 +58,13 @@ def retrieve(url):
         # 取得したデータセットをリストに格納する
         data_result.append(data_set)
 
-    ## データを保存 ##
-    # data_resultを、データフレームに格納
-    df = pd.DataFrame(data_result)
-
     # スクレイピング結果を返す
-    return df
+    return data_result
+
+
+## データを保存 ##
+# data_resultを、データフレームに格納
+df = pd.DataFrame(data_result)
 
 # to_csv()を使って、データフレームをCSV出力する
 df.to_csv("results.csv",index=None,encoding="utf-8-sig")
