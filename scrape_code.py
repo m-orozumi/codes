@@ -57,9 +57,9 @@ def retrieve(url):
 
         # 取得したデータセットをリストに格納する
         data_result.append(data_set)
-        
-# スクレイピング結果を返す
-return data_result
+
+    # スクレイピング結果を返す
+    return data_result
 
 
 ## データを保存 ##
