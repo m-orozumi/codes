@@ -58,13 +58,12 @@ def retrieve(url):
         # 取得したデータセットをリストに格納する
         data_result.append(data_set)
 
+    ## データを保存 ##
+    # data_resultを、データフレームに格納
+    df = pd.DataFrame(data_result)
+
     # スクレイピング結果を返す
-    return data_result
-
-
-## データを保存 ##
-# data_resultを、データフレームに格納
-df = pd.DataFrame(data_result)
+    return DataFrame
 
 # to_csv()を使って、データフレームをCSV出力する
 df.to_csv("results.csv",index=None,encoding="utf-8-sig")
