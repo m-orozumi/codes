@@ -10,8 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # from time import sleep
-
-import os
+# import os
 
 # データ保存用
 import pandas as pd
