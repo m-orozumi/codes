@@ -9,19 +9,17 @@
 import requests
 from bs4 import BeautifulSoup
 
-from time import sleep
+# from time import sleep
+
+import os
 
 # データ保存用
 import pandas as pd
 
 
-## pytest実行関数
-def test_scraping_function():
-    # テストの実装
-    #assert True
-
-    ## スクレイピング ##
-    # 対象サイトのURLを格納する
+## スクレイピング ##
+# 対象サイトのURLを格納する
+def retrieve(content):
     #url = "https://zdh.stagingbridge.net/"
     url = "https://zdh.stagingbridge.net/?s=AWS"
 
@@ -30,7 +28,7 @@ def test_scraping_function():
     req = requests.get(url)
 
     # 対象サイトへ負荷をかけないよう1sec待機
-    sleep(1)
+    # sleep(1)
 
     # 取得結果を解析してsoupに格納
     # BeautifulSoup(解析対象のHTML/XML, 利用するパーサー)
@@ -57,16 +55,13 @@ def test_scraping_function():
             ,'URL': data.attrs['href']
         }
 
-        # 取得したデータセットをリストに格納する
-        data_result.append(data_set)
+    # 取得したデータセットをリストに格納する
+    data_result.append(data_set)
 
 
+## データを保存 ##
+# data_resultを、データフレームに格納
+df = pd.DataFrame(data_result)
 
-    ## データを保存 ##
-    # data_resultを、データフレームに格納
-    df = pd.DataFrame(data_result)
-
-    # to_csv()を使って、データフレームをCSV出力する
-    df.to_csv("results.csv",index=None,encoding="utf-8-sig")
-
-    assert True
+# to_csv()を使って、データフレームをCSV出力する
+df.to_csv("results.csv",index=None,encoding="utf-8-sig")
