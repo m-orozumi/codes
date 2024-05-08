@@ -19,8 +19,8 @@ import pandas as pd
 ## スクレイピング ##
 # 対象サイトのURLを格納する
 def retrieve(url):
-    #url = "https://zdh.stagingbridge.net/"
     url = "https://zdh.stagingbridge.net/"
+    #url = "https://zdh.stagingbridge.net/?s=AWS"
 
     # requestsを使用してhtmlを取得　→変数reqに格納
     req = requests.get(url, params={'q': 'AWS'})
