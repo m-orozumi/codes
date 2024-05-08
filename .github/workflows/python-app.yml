@@ -47,8 +47,8 @@ jobs:
       #run: |
         #pytest
 
-    - name: Run Python script
-      run: pytest scrape_code.py
+    - name: Run Pytest
+      run: pytest
       
     #- name: Add changes to git
       #run: git add results.csv
@@ -60,7 +60,7 @@ jobs:
 
     - name: Add Changes & Commit to git
       run: |
-        git add .
+        git add results.csv
         git commit -m "Added results.csv"
     
 
