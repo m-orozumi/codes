@@ -20,11 +20,11 @@ import pandas as pd
 # 対象サイトのURLを格納する
 def retrieve(url):
     #url = "https://zdh.stagingbridge.net/"
-    url = "https://zdh.stagingbridge.net/?s=AWS"
+    url = "https://zdh.stagingbridge.net/"
 
     # requestsを使用してhtmlを取得　→変数reqに格納
-    #req = requests.get(url, params={'q': 'AWS'})
-    req = requests.get(url)
+    req = requests.get(url, params={'q': 'AWS'})
+    #req = requests.get(url)
 
     # 対象サイトへ負荷をかけないよう1sec待機
     # sleep(1)
@@ -63,8 +63,7 @@ def retrieve(url):
 
 ## データを保存 ##
 # data_resultを、データフレームに格納
-url = "https://zdh.stagingbridge.net/?s=AWS"
-data_result = retrieve(url)
+data_result = retrieve()
 df = pd.DataFrame(data_result)
 
 # to_csv()を使って、データフレームをCSV出力する
