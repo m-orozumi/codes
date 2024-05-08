@@ -9,7 +9,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-# from time import sleep
+from time import sleep
 
 # データ保存用
 import pandas as pd
@@ -30,7 +30,7 @@ def test_scraping_function():
     req = requests.get(url)
 
     # 対象サイトへ負荷をかけないよう1sec待機
-    # sleep(1)
+    sleep(1)
 
     # 取得結果を解析してsoupに格納
     # BeautifulSoup(解析対象のHTML/XML, 利用するパーサー)
