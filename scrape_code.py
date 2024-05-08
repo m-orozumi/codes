@@ -55,8 +55,8 @@ def retrieve(content):
             ,'URL': data.attrs['href']
         }
 
-    # 取得したデータセットをリストに格納する
-    data_result.append(data_set)
+        # 取得したデータセットをリストに格納する
+        data_result.append(data_set)
 
 
 ## データを保存 ##
