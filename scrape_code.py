@@ -63,7 +63,7 @@ def retrieve(url):
     df = pd.DataFrame(data_result)
 
     # スクレイピング結果を返す
-    return DataFrame
+    return df
 
 # to_csv()を使って、データフレームをCSV出力する
 df.to_csv("results.csv",index=None,encoding="utf-8-sig")
